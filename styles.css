@@ -5,35 +5,35 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #282C34; /* Dark background */
+    background-color: #282C34; 
     margin: 0;
 }
 
 h1 {
     text-align: center;
-    color: #61dafb; /* Light blue title for contrast */
+    color: #61dafb; 
 }
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Automatically adjusts size based on the container */
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    width: 90vw; /* Make the board width 90% of the viewport */
-    max-width: 400px; /* Set a maximum width to avoid the board becoming too large on bigger screens */
-    background-color: #3B3F45; /* Dark gray board background for contrast */
+    width: 90vw;
+    max-width: 400px; 
+    background-color: #3B3F45; 
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
 }
 
 .cell {
-    background-color: #253438; /* Light blue background for cells */
+    background-color: #253438; 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vw; /* Dynamic font size based on viewport width */
-    aspect-ratio: 1 / 1; /* Ensures the cells are square no matter the screen size */
+    font-size: 4vw; 
+    aspect-ratio: 1 / 1; 
     cursor: pointer;
     border: 2px solid #ac41f3;
     box-sizing: border-box;
@@ -43,24 +43,24 @@ h1 {
 }
 
 .cell.X {
-    color: #ff6b6b; /* Red color for X */
-    border: 2px solid #ff6b6b; /* Red border for X */
+    color: #ff6b6b; 
+    border: 2px solid #ff6b6b;
 }
 
 .cell.O {
-    color: #1551f5; /* Turquoise color for O */
-    border: 2px solid #1551f5; /* Turquoise border for O */
+    color: #1551f5;
+    border: 2px solid #1551f5; 
 }
 
 .cell:hover {
-    background-color: #06314d; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight scale effect on hover */
+    background-color: #06314d; 
+    transform: scale(1.05); 
 }
 
 #status {
     font-size: 1.2rem;
     text-align: center;
-    color: #fff; /* White status text for better contrast on dark background */
+    color: #fff; 
 }
 
 button {
@@ -68,20 +68,20 @@ button {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #61dafb; /* Matches the cells */
+    background-color: #61dafb; 
     border: none;
-    color: #282C34; /* Dark button text */
+    color: #282C34; 
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #21a1f1; /* Darker blue on hover */
+    background-color: #21a1f1; 
 }
 
 @media (min-width: 768px) {
     .cell {
-        font-size: 2rem; /* Increase font size for larger screens */
+        font-size: 2rem; 
     }
 }
